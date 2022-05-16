@@ -1,38 +1,41 @@
-<!-- Define que este documento é um documento HTML -->
 <!DOCTYPE html>
-    <!--
-    Definie do idioma da sua página:
-    - Útil para a página ser indexada de forma mais eficaz pelos mecanismos de pesquisa (permitindo que ela apareça corretamente em resultados específicos de idioma)
-    - Útil para leitores de tela pronunciarem corretamente o texto
-    -->
 <html lang="pt-BR">
 
 <head>
-    <!--
-    Eespecifica a codificação de caracteres do documento.
-    utf-8 é um conjunto de caracteres universal que inclui praticamente qualquer caractere de qualquer idioma humano.
-    Isso significa que sua página da web poderá lidar com a exibição de qualquer idioma
-    -->
     <meta charset="UTF-8">
-
-    <!--
-    Fornece ao navegador instruções sobre como controlar o dimensionamento da página.
-    Define a largura da página para se adequar à tela do dispositivo.
-    Define o zoom inicial quando a página é carregada pela primeira vez pelo navegador.
-    -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Atribui um título para a página -->
     <title>Viagem dos sonhos</title>
 </head>
 
-<!-- Parte visível no navegador -->
 <body>
-    <h1>Título</h1>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper orci rutrum, interdum eros id, tempus urna. Donec sed arcu id tortor condimentum finibus. Fusce ex risus, interdum ac massa nec, maximus sagittis arcu. Donec hendrerit justo nulla. Aliquam a placerat erat, a viverra tortor. Nam in nulla libero.
-        <a href="https://github.com/liviacarolgouvea/">Praesent mollis orci sit amet laoreet</a>
-    </p>
+    <!--
+    O elemento <header> representa um contêiner para conteúdo introdutório ou um conjunto de links de navegação.
+    Normalmente contém: título, logo, informações de autoria
+    ...
+    Nota: Você pode ter vários elementos <header> em um documento HTML
+    No entanto, <header> não pode ser colocado dentro de um <footer>, <address> ou outro elemento <header>.
+    -->
+    <header>
+        <h1>Venha realizar a viagem dos seus sonhos!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    </header>
+    <!-- O elemento <section> define uma seção em um documento - um agrupamento temático de conteúdo, normalmente com um título -->
+    <section>
+        <h2>Conheça nossos pacotes</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </section>
+    <!--
+    O elemento <footer> define um rodapé para um documento ou seção.
+    Normalmente contém: autoria, Contato, Mapa do site, links para retornar ao topo, documentos relacionados
+    -->
+    <footer>
+        <p>Desenvolvido por Lívia Gouvêa</p>
+    </footer>
 </body>
 
 </html>
