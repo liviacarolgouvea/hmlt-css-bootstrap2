@@ -108,6 +108,9 @@
         <section>
             <h2>Contato</h2>
             <form method="GET" action="">
+                <!-- O elemento <fieldset> é usado para agrupar separar campos dentro do formulário. -->
+                <fieldset>
+                    <legend>Dados pessoais</legend>
                 <label>
                     Nome:<br>
                     <input type="text" name="nome"> <br><br>
@@ -138,6 +141,7 @@
                     O pattern permite atribuir uma regra para a entrada dos dados -->
                     <input type="password" name="senha" pattern="[A-Z]{3}[0-9]{4}" title="A senha deve ter 3 letras maiúsculas e 4 números"><br><br>
                 </label>
+                </fieldset>
                 <button>Salvar</button>
             </form>
             <!--
