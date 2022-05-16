@@ -75,12 +75,16 @@
         -->
         <section>
             <h2>Taxas de serviços</h2>
-            <p>Descrição dos serviços e respectivos valores</p>
+
             <table border>
+                <caption>Descrição dos serviços e respectivos valores</caption>
+                <thead>
                 <tr>
                     <th>Serviço</th>
                     <th>Valor</th>
                 </tr>
+                </thead>
+                <tbody>
                 <tr>
                     <td>Reserva de hotel</td>
                     <td>R$500,00</td>
@@ -93,7 +97,13 @@
                     <td>Aluguel de carros</td>
                     <td>R$300,00</td>
                 </tr>
+                </tbody>
             </table>
+            <!--
+            - Fornecendo um título <caption> com clara Descrição do propósito da tabela,
+            ajuda os usuários a decidirem se precisam ler o restante do conteúdo da tabela ou não.
+            - O título da tabela também é útil para a navegalçao com tecnologias assistiva, como um leitor de tela
+            -->
         </section>
     <footer>
         <p>Desenvolvido por Lívia Gouvêa</p>
