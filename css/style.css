@@ -92,3 +92,15 @@ thead th{
     background: #f4511e !important;
     color: #ffffff !important;
 }
+
+#pacotes .figuras{
+    text-align: center;
+}
+
+#pacotes .figuras figure{
+    display: inline-block;
+}
+
+.videos{
+    text-align: center;
+}
