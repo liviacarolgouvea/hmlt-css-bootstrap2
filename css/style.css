@@ -13,11 +13,21 @@ body {
      */
     color: #818181;
     /* Outra forma de escrever */
+    margin: 0px;
+}
+
+header{
+    background-color: #f4511e;
+    text-align: center;
+}
+
+header p{
+    color: #ffffff;
 }
 
 h1 {
     font-size: 63px;
-    color: #303030;
+    color: #ffffff;
 }
 
 h2 {
@@ -25,4 +35,8 @@ h2 {
     text-transform: uppercase;
     color: #303030;
     font-weight: 600; /* Vai de 100 a 900, onde 400 é igual a normal e 700 é negrito */
+}
+
+section, footer{
+    margin: 40px;
 }
