@@ -10,7 +10,6 @@
 
 <body>
     <header>
-    <!-- O elemento <nav> representa uma seção da página cuja finalidade é fornecer links de navegação como menus e índices. -->
         <nav>
             <ul>
                 <li><a href="#">Pacotes</a></li>
@@ -29,16 +28,6 @@
             officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
             ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-        <!--
-        Utilização do texto alternativo é útil em vários momentos:
-            - Para usuários com deficiencia visual que utilizam leitor de tela.
-            - Quando houver problema com o caminho do arquivo e a imagem não for exibida.
-            - Quando o navegador não suportar o tipo de imagem como Lynx, por exemplo que exibe somente texto
-            - Utilizado pelos mecanismos de pesquisa que podem combinar o texto alternativo com as buscas.
-            - Usuários que desativam a exibção de imagens para reduzir o consumo de dados, especialmente comum em celulares
-            e em países onde a largura de banda é limitada ou cara.
-        -->
         <div class="figuras">
         <figure>
             <img src="img/nossos-pacotes/gramado.jpeg" alt="Imagem chalé em Gramado">
@@ -53,30 +42,14 @@
             <figcaption>Rio de Janeiro</figcaption>
         </figure>
         </div>
-
-        <!--
-        O atributo type é opcional, mas é aconselhável incluí-lo.
-        O atributo type contém o tipo do arquivo e os navegadores podem usar pular imediatamente vídeos que não suportam.
-        Se o tipo não estiver incluído, os navegadores e tentarão reproduzir cada arquivo até encontrar um que funcione,
-        o que obviamente leva tempo e é um uso desnecessário de recursos.
-        -->
         <div class="videos">
         <video controls>
             <source src="video/rabbit320.mp4" type="video/mp4">
             <source src="rabbit320.webm" type="video/webm">
-            <!-- O texto só será exibido em navegadores que não suportam o elemento <video>. -->
             <p>Seu navegador não suporta o video. Aqui está um <a href="rabbit320.mp4">link para baixar o vídeo</a></p>
         </video>
         </section>
         </div>
-        <!--
-        Outros recursos:
-        - Largura e Altura (width and height): Você pode controlar o tamanho do vídeo com esses atributos ou com CSS.
-        - autoplay: Reprodução automática do vídeo. Não é aconselhável usar pois não tem boa aceitação do usuário
-        - loop: Faz com que o vídeo (ou áudio) comece a ser reproduzido novamente sempre que terminar. Não aconselhável também
-        - muted: Faz com que o vídeo seja reproduzida com o som desligado por padrão.
-        - poster: possibilita exibir uma imagem de capa parao vídeo.
-        -->
         <section>
             <h2>Taxas de serviços</h2>
 
@@ -103,16 +76,10 @@
                 </tr>
                 </tbody>
             </table>
-            <!--
-            - Fornecendo um título <caption> com clara Descrição do propósito da tabela,
-            ajuda os usuários a decidirem se precisam ler o restante do conteúdo da tabela ou não.
-            - O título da tabela também é útil para a navegalçao com tecnologias assistiva, como um leitor de tela
-            -->
         </section>
         <section>
             <h2>Contato</h2>
             <form method="GET" action="">
-                <!-- O elemento <fieldset> é usado para agrupar separar campos dentro do formulário. -->
                 <fieldset>
                     <legend>Dados pessoais</legend>
                 <label>
@@ -120,11 +87,11 @@
                     <input type="text" name="nome"> <br><br>
                 </label>
                 <label>
-                    Email:<br><!-- O type email restringe o formato de entrada a um email -->
+                    Email:<br>
                     <input type="email" name="email" placeholder="email@xyz.com" required><br><br>
                 </label>
                 <label>
-                    Data de ida:<br><!-- O type date mostra um calendário para a escolha da data -->
+                    Data de ida:<br>
                     <input type="date" name="dataIda"><br><br>
                 </label>
                 <label>
@@ -132,7 +99,7 @@
                     <input type="date" name="dataVolta"><br><br>
                 </label>
                 <label>
-                    Quantidade de pessoas:<br><!-- O type number restringe o formato de entrada de dados a números -->
+                    Quantidade de pessoas:<br>
                     <input type="number" name="qtdPessoas"><br><br>
                 </label>
                 <label>
@@ -141,8 +108,6 @@
                 </label>
                 <label>
                     Senha: <br>
-                    <!-- O type password esconde a exibição do que é digitado
-                    O pattern permite atribuir uma regra para a entrada dos dados -->
                     <input type="password" name="senha" pattern="[A-Z]{3}[0-9]{4}" title="A senha deve ter 3 letras maiúsculas e 4 números"><br><br>
                 </label>
                 </fieldset>
@@ -160,10 +125,6 @@
                     </label>
                 </fieldset>
                 <br>
-                <!--
-                A diferença entre o checkbox e o radio button é que o com checkbox é possível escolher mais de uma opção 
-                e com o radio button somente é possível escolher uma opção
-                -->
                 <fieldset>
                     <legend>Escolha a forma de pagamento</legend>
                     <label>
@@ -188,11 +149,6 @@
                 <br>
                 <button>Salvar</button>
             </form>
-            <!--
-            action: URL de destino do formulário, quando vazia, retorna para a mesma página.
-            method: O método de envio dos dados. GET ou POST
-            input: campo de entrada dos dados
-            -->
         </section>
     <footer>
         <p>Desenvolvido por Lívia Gouvêa</p>
