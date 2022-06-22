@@ -19,12 +19,34 @@
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Pacotes</a></li>
-                <li><a href="#">Taxas</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
+        <!--
+        Navbars requerem uma classe .navbar
+        .navbar-expand{-sm|-md|-lg|-xl|-xxl} para recolhimento responsivo
+        classes de esquema de cores. -->
+        <nav class="navbar navbar-expand-sm bg-warning">
+            <div class="container-fluid justify-content-end">
+            <!--
+            navbar-toggler classe usada recolher o menu em dispositivos menores
+            data-bs-target diz a qual elemento se refere
+            data-toggle é um atributo de dados do HTML5 que diz qual é o tipo de elemento Neste caso, ele diz que é um elemento que colapsa, ou seja, aumenta e diminui
+            -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="mynavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">Pacotes</a>
+                            <ul class="dropdown-menu bg-warning" aria-labelledby="dropdown03">
+                              <li><a class="dropdown-item" href="#">Nacionais</a></li>
+                              <li><a class="dropdown-item" href="#">Internacionais</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Taxas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
         <h1>Venha realizar a viagem dos seus sonhos!</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
