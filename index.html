@@ -84,7 +84,7 @@
             </video>
     </section>
     </div>
-    <section class="container-fluid bg-warning">
+    <section class="container-fluid bg-light">
         <h2>Taxas de serviços</h2>
 
         <table>
@@ -111,79 +111,52 @@
             </tbody>
         </table>
     </section>
-    <section class="container-fluid bg-light">
-        <h2>Contato</h2>
+    <section class="container-fluid bg-warning">
+        <h2 class="text-center">Faça já seu orçamento</h2>
         <form method="GET" action="">
             <fieldset>
                 <legend>Dados pessoais</legend>
-                <label>
-                    Nome:<br>
-                    <input type="text" name="nome"> <br><br>
-                </label>
-                <label>
-                    Email:<br>
-                    <input type="email" name="email" placeholder="email@xyz.com" required><br><br>
-                </label>
-                <label>
-                    Data de ida:<br>
-                    <input type="date" name="dataIda"><br><br>
-                </label>
-                <label>
-                    Data de volta:<br>
-                    <input type="date" name="dataVolta"><br><br>
-                </label>
-                <label>
-                    Quantidade de pessoas:<br>
-                    <input type="number" name="qtdPessoas"><br><br>
-                </label>
-                <label>
-                    Comentário: <br>
-                    <textarea name="commentario" rows="5"></textarea><br><br>
-                </label>
-                <label>
-                    Senha: <br>
-                    <input type="password" name="senha" pattern="[A-Z]{3}[0-9]{4}"
-                        title="A senha deve ter 3 letras maiúsculas e 4 números"><br><br>
-                </label>
+                <div class="mb-3">
+                    <label class="form-label" for="nome">Nome:</label>
+                    <input type="text" class="form-control" name="nome" id="nome">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="email">
+                    Email:</label>
+                    <input type="email" class="form-control" name="email" placeholder="email@xyz.com" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="dataIda">Data de ida:</label>
+                    <input type="date"  class="form-control" name="dataIda" id="dataIda">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="dataVolta">Data de volta:</label>
+                    <input type="date"  class="form-control" name="dataVolta" id="dataVolta">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="comentario">Comentário:</label>
+                    <textarea name="commentario" id="comentario"  class="form-control" rows="5"></textarea>
+                </div>
             </fieldset>
-            <br>
             <fieldset>
-                <legend>Qual(ais) serviços(s) você deseja contratar?</legend>
-                <label>
-                    <br><input type="checkbox" name="passagens" value="Passagens">Compra de passagens<br>
-                </label>
-                <label>
-                    <br><input type="checkbox" name="hospedagem" value="Hospedagem">Reserva de hospedagem<br>
-                </label>
-                <label>
-                    <br><input type="checkbox" name="aluguelVeiculos" value="Aluguel de veículos">Aluguel de
-                    veículos<br>
-                </label>
+                <legend>Qual(ais) serviços(s) você deseja orçar?</legend>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="compraPassagens" id="compraPassagens" value="compraPassagens">
+                    <label class="form-check-label" for="compraPassagens">Compra de passagens</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="reservaHospedagem" id="reservaHospedagem" value="reservaHospedagem">
+                    <label class="form-check-label" for="reservaHospedagem">Reserva de hospedagem</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="reservaHospedagem" id="aluguelVeiculos" value="aluguelVeiculos">
+                    <label class="form-check-label" for="reservaHospedagem">Aluguel de veículos</label>
+                </div>
             </fieldset>
             <br>
-            <fieldset>
-                <legend>Escolha a forma de pagamento</legend>
-                <label>
-                    <br><input type="radio" name="cartaoCredito" value="Cartão de crédito">Cartão de crédito<br>
-                </label>
-                <label>
-                    <br><input type="radio" name="boleto" value="Boleto">Boleto<br>
-                </label>
-                <label>
-                    <br><input type="radio" name="pix" value="Pix">Pix<br>
-                </label>
-            </fieldset>
+
             <br>
-            <fieldset>
-                <legend>Escolha o prazo</legend>
-                <select name="prazo">
-                    <option value="Avista">Á vista</option>
-                    <option value="5x">5x sem juros</option>
-                    <option value="10x">10x com juros</option>
-                </select>
-            </fieldset>
-            <br>
-            <button>Salvar</button>
+            <button class="btn btn-secondary">Salvar</button>
         </form>
     </section>
     </main>
