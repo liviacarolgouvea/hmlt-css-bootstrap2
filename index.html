@@ -88,8 +88,12 @@
                       <h1 class="card-subtitle mb-2 text-muted">R$5.000,00</h1>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                       <p class="text-muted">Em até 24x</p>
-                      <a href="#" class="btn btn-primary">Reservar</a>
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Reservar</a>
                     </div>
+                    <!--
+                      Os atributos data* são utilizados para atribuir novas propriedades a elementos HTML5
+                      Neste caso, o data-toggle (data-bs-toggle em boostrap para evitar conflitos) diz que este botão irá acinar uma modal
+                      Já o data-target (data-bs-target no bootstrap) diz qual modal ele vai acionar -->
                 </div>
             </div>
             <div class="col-md-4">
@@ -100,7 +104,7 @@
                       <h1 class="card-subtitle mb-2 text-muted">R$4.000,00</h1>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                       <p class="text-muted">Em até 24x</p>
-                      <a href="#" class="btn btn-primary">Reservar</a>
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Reservar</a>
                     </div>
                   </div>
             </div>
@@ -112,7 +116,7 @@
                       <h1 class="card-subtitle mb-2 text-muted">R$2.000,00</h1>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                       <p class="text-muted">Em até 24x</p>
-                      <a href="#" class="btn btn-primary">Reservar</a>
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Reservar</a>
                     </div>
                 </div>
             </div>
@@ -202,5 +206,24 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
 </body>
+
+<!-- Buscar exemplo no site do bootstrap -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Suas compras</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Produto xxxxx adicionado no carrinho!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continuar compando</button>
+          <button type="button" class="btn btn-success">Finalizar a compra</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </html>
